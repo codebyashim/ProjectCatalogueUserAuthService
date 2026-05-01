@@ -1,0 +1,37 @@
+mysql -u root -p
+    Then press Enter
+Enter password:
+
+### Login with specific user
+    mysql -u username -p
+
+### Login to specific database
+    mysql -u root -p database_name
+
+### Login with host & port (if needed)
+    mysql -u root -p -h localhost -P 3306
+
+
+### Alternative (Full path, no PATH setup)
+    "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p
+
+
+### Quick Commands after login
+    SHOW DATABASES;
+    USE your_database;
+    SHOW TABLES;
+    CREATE DATABASE <database_name>
+
+    EXIT;
+    QUIT;
+
+#### Show current user & version
+    SELECT USER();
+    SELECT VERSION();
+
+#### Show current date & time
+    SELECT NOW();
+    SELECT CURDATE();
+    SELECT CURTIME();
+
+    \! cls    -- Windows
