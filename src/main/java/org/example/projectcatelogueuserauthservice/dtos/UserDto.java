@@ -10,6 +10,6 @@ import java.util.List;
 public class UserDto {
     private Long id;
     private String name;
-    private String emailId;
+    private String email;
     private List<String> roles;
 }
